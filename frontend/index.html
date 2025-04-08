@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Application</title>
+    <!-- Insert link to CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#reports">Reports</a></li>
+                <li><a href="#logout" onclick="logout()">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="login" style="display: none;">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Enter your first name">
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section id="dashboard" style="display: none;">
+        <h1>Dashboard</h1>
+        <p>Here is a 200-word summary of the selected topic. This summary includes insightful information about the topic and discusses its relevance and impact. You should replace this placeholder text with the actual content, and provide a URL to the source of this content at the end.</p>
+        <a href="source-url">Source URL</a>
+        <p>Below is a detailed description of the technical aspects of the project, including the tech stack used (HTML, CSS, JavaScript, Node.js, MongoDB) and the infrastructure setup.</p>
+    </section>
+
+    <section id="summary" style="display: none;">
+        <h1>Summary</h1>
+        <div id="summaryChart"></div>
+        <p>Description of the chart and its data source.</p>
+    </section>
+
+    <section id="reports" style="display: none;">
+        <h1>Reports</h1>
+        <div id="reportsChart"></div>
+        <p>Description of the chart and its data source.</p>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
