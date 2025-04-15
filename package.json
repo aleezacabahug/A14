@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@angular/animations": "^19.2.6",
+    "@angular/common": "^19.2.6",
+    "@angular/forms": "^19.2.6",
+    "@angular/router": "^19.2.6",
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "d3": "^7.9.0",
+    "express": "^5.1.0",
+    "express-jwt": "^8.5.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.13.2"
+  },
+  "devDependencies": {
+    "@types/d3": "^7.4.3"
+  }
+}

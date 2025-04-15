@@ -1,0 +1,77 @@
+/* You can add global styles to this file, and also import other style files */
+/* app.component.scss */
+
+/* Variables for colors and spacing */
+$primary-color: #333;
+$secondary-color: #555;
+$accent-color: #ff5722;
+$text-color: #fff;
+$padding: 10px;
+$margin: 20px;
+
+/* Basic styles for the navigation bar */
+nav {
+  background-color: $primary-color;
+  padding: $padding;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+
+    li {
+      margin-right: $margin * 1.5; /* Increased margin for more spacing */
+
+      a {
+        color: $text-color;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+        padding: $padding; /* Added padding for better click area */
+
+        &:hover {
+          color: $accent-color;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+/* Styling for the page content */
+.dashboard, .summary, .reports, .login {
+  padding: $padding * 2;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: $margin;
+
+  h1 {
+    color: $primary-color;
+    margin-bottom: $margin / 2;
+  }
+
+  p {
+    color: $secondary-color;
+    line-height: 1.6;
+  }
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: $margin;
+}
+
+.mb-20 {
+  margin-bottom: $margin;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
