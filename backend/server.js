@@ -69,7 +69,7 @@ const User = mongoose.model('User', userSchema);
 // Seed a test user
 const seedUser = async () => {
     try {
-        const existingUser = await User.findOne({ username: 'Ben' });
+        const existingUser = await User.findOne({ username: 'Aleeza' });
         if (existingUser) {
             console.log('User already exists');
         } else {
